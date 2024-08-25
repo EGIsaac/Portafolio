@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Configuración básica del documento -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css"> <!-- Enlace al archivo CSS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconexión para fuentes -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconexión para fuentes -->
+        <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Jersey+10&display=swap" rel="stylesheet"> <!-- Enlace a fuentes -->
+        <title>Puntos_Actividad</title> <!-- Título de la página -->
+    </head>
+    <body>
+        <header>
+            <!-- Encabezado de la página -->
+            <div id="text_header">
+                <p id="nombre_header">Isaac Echeverry García</p> <!-- Nombre del usuario -->
+                <p id="profesion_header">Desarrollador de software</p> <!-- Profesión del usuario -->
+            </div>
+            <nav class="navegacion">
+                <!-- Menú de navegación -->
+                <ul>
+                    <li><a href="#sobre_mi">Sobre Mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#section_contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="perfil">
+            <!-- Sección del perfil -->
+            <div id="foto_perfil">
+                <img src="img/Foto fondo blanco.jpg" id="fotito" alt="foto_personal"> <!-- Imagen de perfil -->
+                <div id="links_perfil">
+                    <!-- Enlaces a redes sociales -->
+                    <a href="https://www.facebook.com/profile.php?id=100079863443239"><img src="img/facebook.png" class="icono_link" alt="icono_facebook"></a>
+                    <a href="https://www.instagram.com/isaac_echeverry45/"><img src="img/instagram.png" class="icono_link" alt="icono_instagram"></a>
+                    <a href="https://x.com/IsaacEcheverryG"><img src="img/twitter.png" class="icono_link" alt="icono_twitter"></a>
+                </div>
+            </div>
+        </section>
+        <section id="sobre_mi">
+            <!-- Sección "Sobre Mí" -->
+            <h1>Sobre Mí</h1>
+            <p id="descripcion_personal">Soy un <span>programador entusiasta</span>, me gustan mucho los <span>videojuegos</span>, 
+                me gusta el <span>clima frio</span>, <span>la comida</span> (En especial la carne y las papas a la francesa), me gusta el <span>Back-end</span> en 
+                general y un poco de <span>Front-end.</span></p>
+            <h1>Info de Contacto</h1>
+            <p id="informacion_contacto">Correo electronico: <span>isaacecheverry53@gmail.com</span> <br>
+            Número telefónico: <span>3217251299</span> <br>
+            Github: <span>EGIsaac</span></p>
+        </section>
+        <section id="habilidades">
+            <!-- Sección de habilidades -->
+            <div id="skills">
+                <h1>Habilidades</h1>
+                <table>
+                    <tr>
+                        <th>Lenguajes de programación</th>
+                        <th>Herramientas de diseño</th>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Css</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Photoshop</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Figma</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="progress_bar">
+                <!-- Barra de progreso de habilidades -->
+                <h2>Python</h2>
+                <div class="bar">
+                    <div class="progress_python"></div>
+                </div>
+                <h2>Css</h2>
+                <div class="bar">
+                    <div class="progress_css"></div>
+                </div>
+                <h2>JavaScript</h2>
+                <div class="bar">
+                    <div class="progress_js"></div>
+                </div>
+                <h2>Photoshop</h2>
+                <div class="bar">
+                    <div class="progress_photo"></div>
+                </div>
+                <h2>Java</h2>
+                <div class="bar">
+                    <div class="progress_java"></div>
+                </div>
+                <h2>Figma</h2>
+                <div class="bar">
+                    <div class="progress_figma"></div>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos">
+            <!-- Sección de proyectos -->
+            <h1>Proyectos</h1>
+            <div id="muestra_proyectos">
+                <img src="img/proyect_image1.png" height="500px" width="750px" alt="imagen_proyecto" class="imagen_proyecto"> <!-- Imagen del proyecto -->
+                <h2>Descripcion proyecto:</h2>
+                <p>Senag es un proyecto en desarrollo que se basa en un programa de gestion sobre el registro de notas de evaluacion de diversos aprendices 
+                    del area de programación de software como de análisis y desarrollo de software de la institucion SENA.</p>
+                <div class="info_imagen">
+                    <!-- Información adicional sobre el proyecto -->
+                    <p>Este proyecto para salir adelante tuvo algunos obstaculos ya que junto a mi compañero Jhoan Sebastián 
+                        Valle ya que por mi parte no tenia mucha idea de Css y htlm como para poder seguirle el paso a mi 
+                        compañero por lo cual la mayoria del tiempo tuve que estar preguntandole a Sebastián sobre el como 
+                        hacer ciertas cosas las cuales no sabia hacer por lo que el proceso se hizo un poco lento pero se 
+                        logró avanzar exitosamente.</p>
+                </div>
+            </div>
+        </section>
+        <section id="section_contacto">
+            <!-- Sección de contacto -->
+            <div class="contactos">
+                <h2>Contacto</h2>
+                <form action="/enviar-mensaje" method="post" onsubmit="return validarFormulario()">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <!-- Pie de página -->
+            <div>
+                <p>&copy 2024 Isaac Echeverry García. Todos los derechos reservados.</p>
+                <a href="https://www.facebook.com/profile.php?id=100079863443239"><img src="img/facebook.png" class="icono_link" alt="icono_facebook"></a>
+                <a href="https://www.instagram.com/isaac_echeverry45/"><img src="img/instagram.png" class="icono_link" alt="icono_instagram"></a>
+                <a href="https://x.com/IsaacEcheverryG"><img src="img/twitter.png" class="icono_link" alt="icono_twitter"></a>
+            </div>
+        </footer>
+    </body>
+    <script src="js/main.js"></script> <!-- Enlace al archivo JavaScript -->
+</html>

@@ -1,0 +1,439 @@
+/* Resetea márgenes y paddings y aplica una fuente general */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Edu VIC WA NT Beginner;
+}
+
+/* Estilo general del cuerpo de la página */
+body{
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(41, 44, 41), rgb(170, 170, 170));
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilo del encabezado */
+header{
+    position: fixed;
+    top: 0;
+    background-color: #FFBD00;
+    width: 100%;
+    height: 20%;
+
+    #text_header{
+        display: flex;
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5%;
+
+        #nombre_header{
+            font-size: 40px;
+            font-weight: 600;
+            font-family: Edu VIC WA NT Beginner;
+        }
+        #profesion_header{
+            font-size: 20px;
+            font-weight: 600;
+            font-family: Edu VIC WA NT Beginner;
+            text-decoration: underline;
+        }
+    }
+    /* Estilo del menú de navegación */
+    .navegacion{
+        display: flex;
+        margin-top: 8px;
+        width: 100%;
+        height: 45%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        ul{
+            display: flex;
+            gap:40px;
+
+            li{
+                display: flex;
+                list-style: none;
+
+                a{
+                    font-family: Edu VIC WA NT Beginner;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: black;
+                    transition: 0.3s;
+                }
+                a:hover{
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+/* Estilo para secciones con margen superior */
+#perfil{
+    padding-top: 150px;
+    margin-top: 5%;
+
+    /* Estilo de la imagen del perfil y los enlaces sociales */
+    #foto_perfil{
+        height: 55%;
+        width: 30%;
+        border-radius: 25%;
+        background-color: #EAAE03;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    
+        #fotito{
+            margin: 10px;
+            height: 60%;
+            width: 45%;
+            border-radius: 25%;
+            border: 3px solid black;
+            transition: 0.3s;
+        }
+        #fotito:hover{
+            height: 65%;
+            width: 50%;
+        }
+        #links_perfil{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            height: 20%;
+            width: 100%;
+
+            .icono_link{
+                height: 50px;
+                width: 50px;
+                transition: 0.3s;
+                margin-left: 10px;
+            }
+            .icono_link:hover{
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+}
+#sobre_mi{
+    padding-top: 150px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        color: white;
+        font-size: 50px;
+        text-decoration: overline underline #EAAE03; 
+        transition: 0.3s;
+        margin: 15px;
+        margin-top: 20px;
+    }
+    h1:hover{
+        color: #EAAE03;
+    }
+    #descripcion_personal{
+        color: white;
+        font-size: 25px;
+        margin-left: 25%;
+        margin-right: 25%;
+
+        span{
+            color: #EAAE03;
+            transition: 0.3s;
+        }
+    }
+    #informacion_contacto{
+        color: white;
+        font-size: 25px;
+        margin-left: 25%;
+        margin-right: 25%;
+
+        span{
+            color: #EAAE03;
+            transition: 0.3s;
+        }
+    }
+}
+
+/* Estilo de la sección de habilidades */
+#habilidades{
+    padding-top: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    #skills{
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    
+        h1{
+            color: white;
+            font-size: 50px;
+            transition: 0.3s;
+        }
+        h1:hover{
+            color: #EAAE03;
+        }
+    
+        table{
+            margin-top: 10px;
+        
+            tr{
+                th{
+                    border: 2px solid #fff;
+                    width: 350px;
+                    color: white;
+                    font-size: 30px;
+                    transition: 0.3s;
+                }
+                th:hover{
+                    background-color: #EAAE03;
+                    border-color: black;
+                    color: black;
+                }
+                td{
+                    text-align: center;
+                    border: 2px solid #fff;
+                    color: white;
+                    font-size: 25px;
+                    font-weight: 800;
+                    transition: 0.3s;
+                }
+                td:hover{
+                    background-color: #EAAE03;
+                    border-color: black;
+                    color: black;
+                }
+            }
+        }
+    }
+    .progress_bar{
+        margin-top: 10px;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+
+        h2{
+            margin: 10px;
+            color: #fff;
+        }
+    
+        .bar{
+            align-items: center;
+            margin-left: 15%;
+            width: 70%;
+            height: 3%;
+            border-radius: 10px;
+            background-color: #000000;
+            border: 3px solid #000;
+
+            .progress_python{
+                width: 60%;
+                height: 100%;
+                background-color: #EAAE03;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                transition: 0.3s;
+            }
+            .progress_css{
+                width: 50%;
+                height: 100%;
+                background-color: #EAAE03;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .progress_js{
+                width: 35%;
+                height: 100%;
+                background-color: #EAAE03;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .progress_photo{
+                width: 30%;
+                height: 100%;
+                background-color: #EAAE03;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .progress_java{
+                width: 30%;
+                height: 100%;
+                background-color: #EAAE03;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            .progress_figma{
+                width: 60%;
+                height: 100%;
+                background-color: #EAAE03;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+        }
+    }    
+}
+#proyectos{
+    padding-top: 150px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    h1{
+        color: white;
+        font-size: 50px;
+        transition: 0.3s;
+    }
+    h1:hover{
+        color: #EAAE03;
+    }
+
+    #muestra_proyectos{
+        margin-top: 20px;
+        margin-left: 10%;
+        background-color: #838383;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        width: 80%;
+        border-radius: 15px;
+
+        .imagen_proyecto{
+            border-radius: 10px;
+            max-width: 100%;
+            transition: 0.3s ease;
+        }
+        .info_imagen{
+            display: none;
+            margin-top: 10px;
+        }
+        .info_imagen.active{
+            display: block;
+        }
+
+        h2{
+            margin-top: 10px;
+            font-size: 45px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+}
+#section_contacto{
+    padding-top: 150px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+    .contactos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            font-size: 50px;
+        }
+
+        form{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: #838383;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 15px;
+
+            label{
+                width: 50%;
+                margin-left: 25%;
+                font-weight: 800;
+            }
+
+            input{
+                width: 50%;
+                margin-left: 25%;
+                margin-bottom: 10px;
+            }
+            textarea{
+                width: 50%;
+                margin-left: 25%;
+                margin-bottom: 10px;
+                border-radius: 15px;
+            }
+            button{
+                width: 50px;
+                height: 30px;
+                margin-left: 48%;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+/* Estilo del pie de página */
+footer{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #EAAE03;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    p{
+        margin-top: 5px;
+        font-weight: 800;
+        transition: 0.3s;
+    }
+    p:hover{
+        font-size: 20px;
+        font-weight: 800;
+        margin-top: 2px;
+    }
+    img{
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+    }
+    img:hover{
+        width: 35px;
+        height: 35px;
+    }
+}
+@media (max-width : 768px){
+    img{
+        width: 95%;
+        height: 25%;
+    }
+    #perfil{
+
+        #foto_perfil{
+            width: 60%;
+            height: 40%;
+        }
+        #fotito{
+            width: 90%;
+            height: 70%;
+        }
+    }
+}
